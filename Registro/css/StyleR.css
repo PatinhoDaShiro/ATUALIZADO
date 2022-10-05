@@ -1,0 +1,50 @@
+
+.validate{color: white;}
+#fundo{
+    background-color: rgb(53, 53, 53);
+    border-radius: 40px;
+    
+}
+.container{
+    z-index: 2;
+    margin-top: 2vh;
+    width: 35%;
+  
+}
+.frase{
+    font-size: 1rem;
+    color: rgb(211, 235, 236);
+}
+#titulo{
+    font-size: 1.5rem;
+    color: rgb(103, 208, 216);
+    margin-bottom: 1vh;
+}
+body{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(https://c.tenor.com/Iw7bzoCNd9YAAAAd/yasuo.gif) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+
+@media screen and (max-width: 1070px) and (min-width: 100px){
+  
+    .container{
+        width: 50%;
+     }
+    .inputs{
+        margin-bottom: 1vh;
+    }}
+   
