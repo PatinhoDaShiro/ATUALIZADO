@@ -12,7 +12,7 @@ include TEMPLATE_BASE.'/nav.php';
 include TEMPLATE_BASE.'/opcoes.php';
 $user = $_SESSION['userName'];
 
- $query = "select * from usuarios where usuario = '$user'";
+ $query = "select usuario, imgPerf, descricao from usuarios where usuario = '$user'";
  //envia os dados e compara no banco
  $result = mysqli_query($conexao, $query);
  $row = mysqli_num_rows($result);

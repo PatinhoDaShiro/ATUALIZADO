@@ -2,8 +2,8 @@
 	session_start();
 	error_reporting(E_ALL ^ E_NOTICE);
 	$nome = $_SESSION['userName'];
-	include 'D:\\xampp\htdocs/TGE/chat-conection.php';
-	include 'D:\\xampp\htdocs/TGE/config.php';
+	include 'C:\\xampp\htdocs/TGE/chat-conection.php';
+	include 'C:\\xampp\htdocs/TGE/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

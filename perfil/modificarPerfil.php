@@ -122,6 +122,7 @@ $(document).ready(function(){
 
 });  
 </script>
+
     <form action="upload.php" method="post">
       <h3>Alterar descrição:</h3>
     <textarea name="descriptionChange" id="textDescr" minLength="1" maxLength="2000"></textarea>
@@ -137,7 +138,7 @@ $(document).ready(function(){
 
     <form action="upload.php" method="post">
     <h3>Alterar Nome:</h3>
-    <input name="alterarNome" data-ls-module="charCounter" minLength="6" maxLength="16"></input>
+    <input name="alterarNome" data-ls-module="charCounter" minLength="4" maxLength="16"></input>
     <button type="submit">VAI!</button>
     </form>
     <form action="upload.php" method="post">

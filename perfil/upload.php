@@ -30,9 +30,9 @@ if(isset($_POST["descriptionChange"])){
     if($descricao != "" || $descricao != null){
         $query = "UPDATE usuarios SET descricao = '$descricao' where usuario = '$user'";
         mysqli_query($conexao, $query);
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }else{
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }
 }
 
@@ -41,9 +41,9 @@ if(isset($_POST["alterarSenha"])){
     if($senha != "" || $senha != null){
         $query = "UPDATE usuarios SET senha = md5('$senha') where usuario = '$user'";
         mysqli_query($conexao, $query);
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }else{
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }
         
 }
@@ -53,12 +53,11 @@ if(isset($_POST["alterarNome"])){
     if($nome != "" || $nome != null){
         $query = "UPDATE usuarios SET usuario = '$nome' where usuario = '$user'";
         mysqli_query($conexao, $query);
-        session_start();
         $_SESSION['userName'] = $nome;
         $user = $nome;
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }else{
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }
         
 }
@@ -68,9 +67,9 @@ if(isset($_POST["alterarEmail"])){
     if($email != "" || $email != null){
         $query = "UPDATE usuarios SET email = '$email' where usuario = '$user'";
         mysqli_query($conexao, $query);
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }else{
-        header("Location:".URL_BASE."perfil/modificarPerfil.php");
+        header("Location:".URL_BASE."/perfil/modificarPerfil.php");
     }
         
 }
