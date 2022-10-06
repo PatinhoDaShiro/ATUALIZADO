@@ -23,3 +23,15 @@
     margin: 0 ;
   
 }
+#descricaoPerf{
+
+    background-color: #424549;
+}
+#usuario{
+    
+    margin-right: 7vw;
+    margin-top: 3vh;
+}
+#nickUsuario{
+    color: white;
+}

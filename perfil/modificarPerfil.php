@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(E_ALL ^ E_NOTICE);
 include '../conexao.php';
 include '../config.php';
 if(isset($_SESSION['userName'])){
@@ -7,26 +8,18 @@ if(isset($_SESSION['userName'])){
     Header("Location:".URL_BASE."/login/loginPage.php");
 }
 include TEMPLATE_BASE.'/head.php';
-
+include TEMPLATE_BASE.'/nav.php';
+include TEMPLATE_BASE.'/opcoes.php';
 ?>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css" />
+<link rel="stylesheet" href="<?php echo URL_BASE?>/templates\css\style.css">
     <link rel="stylesheet" href="<?php echo URL_BASE?>/csspaginas/editarperfil.css" alt=""/>
     
-
-</head>
-
-<?php
-
-include TEMPLATE_BASE.'/nav.php';
-
-include TEMPLATE_BASE.'/opcoes.php';
-
-?>
- 
+    </head>
 <body>  
   
   <script src="jquery.min.js"></script>  

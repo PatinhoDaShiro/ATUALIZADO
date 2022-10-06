@@ -87,8 +87,8 @@ height: 100%;
     background-color: #424549;
     float: left;
     text-align: left;
-    padding: 4vh 3vw 68.5vh 2vw;
-    width: 14vw;
+    padding: 4vh 3vw 68.5vh ;
+    width: 20vw;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -104,8 +104,9 @@ height: 100%;
 }
 #opcoesperfil{
     margin-bottom: 3vh;
-    padding-left: 1vw;
+    
     margin-left: 3px;
+    font-size: 25px;
 }
 ul{
     padding: 0;
@@ -119,7 +120,7 @@ ul{
     color: white;
 }
 #perfil_opcoes{
-    z-index: 4;
+   
     margin-top: 40px;
     position: absolute;
     width: 194px;
@@ -236,9 +237,7 @@ body{
         width: 90vw;
         margin-left: 5vw;
     }
-    #perfil_opcoes{
-        width: 185px;
-    }
+    
     
   
 }
@@ -269,12 +268,7 @@ body{
 #TGE{
     font-size: 25px;
 }
-#perfil_opcoes{
-   
-      
-    width: 186px;
-    
-}
+
 }
 
 @media screen and (max-width: 900px) and (min-width: 701px){
@@ -298,10 +292,7 @@ body{
 #welcome{
     width: 50vw;
 }
-#perfil_opcoes{
-    font-size: 23px;
-        width: 185px;
-}
+
 #logoimg{
     width: 65px;
     height: 50px;
@@ -352,16 +343,8 @@ body{
        width: 90vw;
        margin-left: 2.5vw;
      }
-    #perfil_link{
-        margin-top: 10px;
-        
-    }
-    #perfil_opcoes{
-        font-size: 20px;
-      
-        width: 150px;
-        
-    }
+    
+   
 }
 @media screen and (max-width: 450px) and (min-width: 356px){
     #bemvindo{
@@ -431,27 +414,14 @@ body{
        width: 90vw;
        margin-left: 2.5vw;
      }
-    #perfil_link{
-        margin-top: 10px;
-       
-    }
+   
     #nav{
         padding: 0;
     }
-    #perfil_opcoes{
-      
-        font-size: 18px;
-        width: 150px;
-        
-    }
+    
     }
 @media screen and (max-width: 299px) and (min-width: 200px){
-    #perfil_opcoes{
-     
-    font-size: 15px;
-    width: 120px;
-        
-    }
+   
     #jogos{
         width: 90vw;
         margin-left: 12vw;
@@ -497,10 +467,7 @@ body{
        width: 90vw;
        margin-left: 2.5vw;
      }
-    #perfil_link{
-        margin-top: 8px;
-        margin-right: 10px;
-    }
+   
  
 }
 
